@@ -7,7 +7,7 @@
     "ui"
   ],
   "scripts": {
-    "start":"npm run start --workspace=api",
+    "start":"npm run build --workspace=ui && npm run build --workspace=api && npm run start --workspace=api",
     "build":"npm run build --workspace=ui",
     "dev:api":"npm run build && npm run dev --workspace=api",
     "dev:ui":"npm run dev --workspace:ui"
