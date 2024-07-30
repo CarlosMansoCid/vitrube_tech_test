@@ -1,0 +1,31 @@
+{
+  "name": "vitruve_tech_test",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "api",
+    "ui"
+  ],
+  "scripts": {
+    "start":"npm run start --workspace=api",
+    "build":"npm run build --workspace=ui",
+    "dev:api":"npm run build && npm run dev --workspace=api",
+    "dev:ui":"npm run dev --workspace:ui"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "typescript": "^5.5.4"
+  },
+  "eslintConfig": {
+    "extends":"./node_modules/standar/eslintrc.json",
+    "env":{
+      "jest": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
